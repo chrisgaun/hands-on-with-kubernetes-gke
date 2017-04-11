@@ -53,3 +53,9 @@ Join the Kubernetes community [here](https://github.com/chrisgaun/GKE-hands-on-t
 The Google SDK Container commands are found [here](https://cloud.google.com/sdk/gcloud/reference/container/)
 
 ***Kubernetes command line (Kubectl) cheat sheet*** [here](https://kubernetes.io/docs/user-guide/kubectl-cheatsheet/)
+
+## Sponsors
+
+![Google Cloud Platform](https://cloud.google.com/_static/1c93cfc82f/images/cloud/gcp-logo.svg)
+
+![Apprenda](https://upload.wikimedia.org/wikipedia/commons/c/cc/Apprenda_logo.png)
