@@ -1,0 +1,33 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: dotnetcorek8s-v1
+  labels:
+    name: dotnetcorek8s-v1
+spec:
+  replicas: 3
+  strategy:
+    rollingUpdate:
+      maxSurge: 1
+      maxUnavailable: 1
+    type: RollingUpdate
+  minReadySeconds: 30
+  selector:
+    matchLabels:
+      app: dotnetcorek8s-v1
+  template:
+    metadata:
+      labels:
+        app: dotnetcorek8s-v1
+        version: "1.0"
+        tier: frontend
+    spec:
+      containers:
+      - name: dotnetcorek8s-v1
+        image: mattamm/dotnetcorek8s:v1
+        resources:
+          requests:
+            cpu: 100m
+            memory: 100Mi
+        ports:
+        - containerPort: 8080

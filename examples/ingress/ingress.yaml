@@ -1,0 +1,13 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+ name: k8s-workshop-ingress
+spec:
+ rules:
+ - http:
+     paths:
+     - path: /
+       backend:
+         serviceName: k8s-workshop-ingress
+         servicePort: 80
+   host: k8sworkshop.com

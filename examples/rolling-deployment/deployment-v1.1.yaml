@@ -1,0 +1,33 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: k8s-workshop-site
+  labels:
+    name: k8s-workshop-site
+spec:
+  replicas: 3
+  strategy:
+    rollingUpdate:
+      maxSurge: 1
+      maxUnavailable: 1
+    type: RollingUpdate
+  minReadySeconds: 30
+  selector:
+    matchLabels:
+      app: k8s-workshop-site
+  template:
+    metadata:
+      labels:
+        app: k8s-workshop-site
+        version: "1.1"
+        tier: frontend
+    spec:
+      containers:
+      - name: k8s-workshop-site
+        image: quay.io/apprenda/k8s-workshop-site:1.1
+        resources:
+          requests:
+            cpu: 100m
+            memory: 100Mi
+        ports:
+        - containerPort: 80
