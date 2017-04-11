@@ -10,7 +10,9 @@ The following repository will create you a Kubernetes cluster using the followin
 
 ## Course Documents
 
-Join the course's Slack: [![Slackin](http://54.242.94.98/badge.svg)](http://54.242.94.98/)
+Join the course's Slack:
+
+ [![Slackin](http://54.242.94.98/badge.svg)](http://54.242.94.98/)
 
 You will find the presentation, links, commands and group questions pinned in the _#k8satgoogle_ channel
 
