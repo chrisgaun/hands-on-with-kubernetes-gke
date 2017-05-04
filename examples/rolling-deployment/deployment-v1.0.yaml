@@ -1,9 +1,7 @@
-apiVersion: extensions/v1beta1
 kind: Deployment
+apiVersion:	extensions/v1beta1
 metadata:
-  name: k8s-workshop-site
-  labels:
-    name: k8s-workshop-site
+  name: kdemo-dep
 spec:
   replicas: 3
   strategy:
@@ -12,22 +10,19 @@ spec:
       maxUnavailable: 1
     type: RollingUpdate
   minReadySeconds: 30
-  selector:
-    matchLabels:
-      app: k8s-workshop-site
   template:
     metadata:
       labels:
-        app: k8s-workshop-site
-        version: "1.0"
-        tier: frontend
+        name: kdemo
+        visualize: 'true'
     spec:
       containers:
-      - name: k8s-workshop-site
-        image: quay.io/swade1987/k8s-workshop-site:1.0
+      - name: kdemo
+        image: ikester/kdemo:v1
         resources:
           requests:
             cpu: 100m
             memory: 100Mi
         ports:
-        - containerPort: 80
+        - containerPort: 8080
+      terminationGracePeriodSeconds: 1
