@@ -1,12 +1,14 @@
-apiVersion: v1
 kind: Service
+apiVersion: v1
 metadata:
-  name: k8s-workshop-site
+  name: kdemo-svc
+  labels:
+    visualize: 'true'
 spec:
   selector:
-    app: k8s-workshop-site
+    name: kdemo
   ports:
-    - protocol: TCP
-      port: 80
-      targetPort: 80
-  type: LoadBalancer
+  - protocol: TCP
+    port: 80
+    targetPort: 8080
+  type: NodePort
