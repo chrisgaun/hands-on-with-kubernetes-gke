@@ -9,7 +9,7 @@ The following repository will help you create a Kubernetes cluster running on Go
 2. Click link to navigate in the Google Cloud Console to API Manager > Library https://console.cloud.google.com/apis/library. Enable the Compute Engine and Container Engine API: 
 ![Compute and Container Engine](http://i.imgur.com/obCh0lP.png)
 ![Enable APIs](http://i.imgur.com/BThkhfK.png)
-3. Download Google SDK for Mac, Linux or Windows: https://cloud.google.com/sdk/ The SDK is used to run commands in Powershell (Windows) or the OSX terminal. 
+3. Download Google SDK for Mac, Linux or Windows: https://cloud.google.com/sdk/ The SDK is used to run commands in PowerShell (Windows) or the Mac OS X terminal. 
 4. Clone of this repo to upload applications
 
 ## Course Documents
