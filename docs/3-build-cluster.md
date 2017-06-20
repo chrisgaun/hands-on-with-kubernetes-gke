@@ -18,12 +18,12 @@ Find the project ID
 
 ![Image of Google Cloud Dashboard](http://i.imgur.com/WRXSKt4.png)
 
-Run the command to create a 3-node cluster on Google cloud. 
+Copy the following command and replace [PROJECT ID] with your specific project ID. 
 
 ```
-$ gcloud container clusters create k8strainingcluster
+$ gcloud container --project [PROJECT ID] clusters create "k8strainingcluster" --zone "us-west1-a" --machine-type "n1-standard-1" --image-type "GCI" --disk-size "100" --scopes "https://www.googleapis.com/auth/compute","https://www.googleapis.com/auth/devstorage.read_only","https://www.googleapis.com/auth/logging.write","https://www.googleapis.com/auth/servicecontrol","https://www.googleapis.com/auth/service.management.readonly","https://www.googleapis.com/auth/trace.append" --num-nodes "3" --network "default" --enable-cloud-logging --enable-cloud-monitoring --enable-autoupgrade
 ```
- 
+Run the command to create a 3-node cluster on Google cloud. 
 
 ## 3. Connect with Cluster
 
