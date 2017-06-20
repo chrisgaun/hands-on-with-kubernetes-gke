@@ -67,7 +67,7 @@ Open the Dashboard in browser with the following IP URL
 Would accessing the Dashboard be the same on other instances of Kubernetes - e.g. not public cloud? Yes, but you can also access the Dashboard in other ways, including 
 
 ```
-https://<IP of master node>/ui"
+https://<IP of master node>/ui
 ```
 
 On GKE you will be prompted for a username and a password to access the Dashboard UI. The username is admin and the password is automatically generated. To retrieve it, run the following command and look for it in the resulting YAML output:
