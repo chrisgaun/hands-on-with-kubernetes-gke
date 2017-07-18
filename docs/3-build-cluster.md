@@ -79,7 +79,10 @@ Grab the IP address from the highlighted below and paste it into your prefered b
 In the command line, deploy "hello world" application to get something up and running on your new cluster
 
 ```
-$ kubectl run hello-world --replicas=5 --labels="run=load-balancer-example" --image=gcr.io/google-samples/node-hello:1.0  --port=8080
+$ kubectl run hello-world \
+--replicas=5 --labels="run=load-balancer-example" \
+--image=gcr.io/google-samples/node-hello:1.0  \
+--port=8080
 ```
 
 ## 5. Tour of Dashboard (the official UI of Kubernetes)
