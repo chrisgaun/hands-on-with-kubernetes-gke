@@ -32,7 +32,8 @@ $ gcloud container clusters create "k8sintelgoogle" \
   --zone "us-east1-c" \
   --machine-type "n1-standard-1" \
   --image-type "GCI" --disk-size "100" \
-  --scopes cloud-platform 
+  --scopes cloud-platform
+  --num-nodes "3"
 ```
 Run the command to create a 3-node cluster on Google cloud. 
 
