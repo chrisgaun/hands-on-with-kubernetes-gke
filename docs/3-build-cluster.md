@@ -18,8 +18,23 @@ If you used Google Cloud before you may have more than one project. Make sure yo
 ```
 $ gcloud config set project [PROJECT_ID]
 ```
+## 2. Clone Github
 
-## 2. Provision Cluster
+Clone this Github repo to the Cloud Shell so that you have all applications artifacs
+
+```
+git clone https://github.com/chrisgaun/hands-on-with-kubernetes-gke 
+```
+
+Now type "ls" into the command line. You should see the repo. 
+
+Change the directory to the cloned repo
+
+```
+cd hands-on-with-kubernetes-gke
+```
+
+## 3. Provision Cluster
 
 Run the command to create a 3-node cluster on Google cloud.
 
@@ -32,7 +47,7 @@ $ gcloud container clusters create "k8sintelgoogle" \
   --num-nodes "3"
 ``` 
 
-## 3. Connect with Cluster
+## 4. Connect with Cluster
 
 Install kubectl
 
@@ -74,7 +89,7 @@ Grab the IP address from the highlighted below and paste it into your prefered b
 
 ![IP Address](http://i.imgur.com/i1hlPV2.png)
 
-## 4. Run "Hello World"
+## 5. Run "Hello World"
 
 In the command line, deploy "hello world" application to get something up and running on your new cluster
 
@@ -85,6 +100,6 @@ $ kubectl run hello-world \
 --port=8080
 ```
 
-## 5. Tour of Dashboard (the official UI of Kubernetes)
+## 6. Tour of Dashboard (the official UI of Kubernetes)
 
 Instructor will give a tour of the Kubernetes Dashboard
