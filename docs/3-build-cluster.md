@@ -70,7 +70,7 @@ Get the IP of the Dashboard
 ```
 $ kubectl get svc kubernetes-dashboard -n kube-system -w
 ```
-Grab the IP adress from the highlighted below and paste it into your prefered browser
+Grab the IP address from the highlighted below and paste it into your prefered browser
 
 ![IP Address](http://i.imgur.com/i1hlPV2.png)
 
