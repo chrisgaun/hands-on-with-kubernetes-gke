@@ -37,51 +37,42 @@ $ gcloud container clusters create "k8sintelgoogle" \
 Install kubectl
 
 ```
-gcloud components install kubectl
+$ gcloud components install kubectl
 ```
 
 Get credentials
 
 ```
-gcloud auth application-default login
+$ gcloud auth application-default login
 ```
 
 Configure kubectl with the training cluster context.
 
 ```
-gcloud container clusters get-credentials k8strainingcluster
+$ gcloud container clusters get-credentials k8sintelgoogle
 ```
 
 Verify kubectl can connect to the cluster
 
 ```
-kubectl cluster-info
+$ kubectl cluster-info
 ```
 
-Start proxy to connect to the Kubernetes cluster. This command authenticates you with the Kubernetes API server. 
+Since we are using the public cloud command line (essentially a VM in Google Cloud) we need to modify the Kubernetes Dashboard UI service and expose it to the internet
 
 ```
-kubectl proxy
+$ kubectl get svc kubernetes-dashboard -n kube-system -o yaml | \
+sed "s/ClusterIP/LoadBalancer/" | \
+kubectl apply -f - -n kube-system
 ```
-Note you can only run the Kubernetes Dashboard (official UI) on the machine in which you run this command. It won't work on remote machine.  
-
-Open the Dashboard in browser with the following IP URL
-
-```
-127.0.0.1:8001/ui
-```
-
-Would accessing the Dashboard be the same on other instances of Kubernetes - e.g. not public cloud? Yes, but you can also access the Dashboard in other ways, including 
+Get the IP of the Dashboard
 
 ```
-https://<IP of master node>/ui
+$ kubectl get svc kubernetes-dashboard -n kube-system -w
 ```
+Grab the IP adress from the highlighted below and paste it into your prefered browser
 
-On GKE you will be prompted for a username and a password to access the Dashboard UI. The username is admin and the password is automatically generated. To retrieve it, run the following command and look for it in the resulting YAML output:
-
-```
-gcloud container clusters describe k8strainingcluster
-```
+![IP Address](http://i.imgur.com/i1hlPV2.png)
 
 ## 4. Run "Hello World"
 
