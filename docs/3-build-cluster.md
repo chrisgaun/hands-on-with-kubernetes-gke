@@ -21,11 +21,7 @@ $ gcloud config set project [PROJECT_ID]
 
 ## 2. Provision Cluster
 
-Find the project ID
-
-![Image of Google Cloud Dashboard](http://i.imgur.com/WRXSKt4.png)
-
-Copy the following command and replace [PROJECT ID] with your specific project ID. 
+Run the command to create a 3-node cluster on Google cloud.
 
 ```
 $ gcloud container clusters create "k8sintelgoogle" \
@@ -34,8 +30,7 @@ $ gcloud container clusters create "k8sintelgoogle" \
   --image-type "GCI" --disk-size "100" \
   --scopes cloud-platform \
   --num-nodes "3"
-```
-Run the command to create a 3-node cluster on Google cloud. 
+``` 
 
 ## 3. Connect with Cluster
 
