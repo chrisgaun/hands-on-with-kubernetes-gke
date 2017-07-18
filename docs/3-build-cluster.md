@@ -88,7 +88,3 @@ $ kubectl run hello-world \
 ## 5. Tour of Dashboard (the official UI of Kubernetes)
 
 Instructor will give a tour of the Kubernetes Dashboard
-
-## 6. Open New Command Line
-
-To continue to use the CLI, open a new command prompt with the proxy running in the other one. 
