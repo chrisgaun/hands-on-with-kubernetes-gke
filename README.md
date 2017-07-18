@@ -41,7 +41,8 @@ $ gcloud container clusters delete [NAME OF CLUSTER] --zone "[ZONE]"
 If you used the standard command in this workshop to start the cluster than copy and paste the following:
 
 ```
-$ gcloud container clusters delete k8strainingcluster --zone "us-west1-a"
+$ gcloud container clusters delete k8sintelgoogle \
+--zone "us-east1-c"
 ```
 You will still have roughly $300 in Google Cloud credits you can use to test out Kubernetes more.
 
