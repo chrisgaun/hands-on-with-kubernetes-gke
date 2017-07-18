@@ -1,4 +1,4 @@
-# Build the Kubernetes cluster
+# Build the Kubernetes Cluster
 
 ## 1. Sign into Google Cloud
 
