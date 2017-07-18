@@ -2,14 +2,21 @@
 
 ## 1. Sign into Google Cloud
 
-Open a command shell. 
+Navigate to the Google Cloud portal: https://console.cloud.google.com/ 
 
-Sign into your Google Cloud account (need Google SDK [here](https://cloud.google.com/sdk/))
+For this workshop we will use the web-based command line, Google Cloud Shell, to eliminate differences in laptop images. 
 
-The following command will open up a browser window to authenticate using your Gsuite account associated with the Google Cloud.
+Open the Google Cloud Shell
 
+![Cloud Shell](https://image.ibb.co/ccoxLF/cloudshell.png)
+
+List all the projects on Google Cloud to make sure everything is working and you're in the right place. 
 ```
-$ gcloud auth login
+$ gcloud projects list
+```
+If you used Google Cloud before you may have more than one project. Make sure you change to the correct project:
+```
+$ gcloud config set project [PROJECT_ID]
 ```
 
 ## 2. Provision Cluster
