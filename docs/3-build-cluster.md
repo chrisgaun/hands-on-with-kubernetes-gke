@@ -29,7 +29,7 @@ gcloud config set project [PROJECT_ID]
 ```
 ## 2. Clone Github
 
-Clone this Github repo to the Cloud Shell so that you have all applications artifacs
+Clone this Github repo to the Cloud Shell so that you have all demo applications
 
 ```
 git clone https://github.com/chrisgaun/hands-on-with-kubernetes-gke 
