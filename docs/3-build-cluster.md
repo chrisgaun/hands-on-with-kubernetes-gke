@@ -1,4 +1,13 @@
 # Build the Kubernetes Cluster
+In the following section, there are commands highlighted in grey. You will copy and paste the commands into the Google CLoud Shell command prompt - $
+```
+gcloud
+```
+**Tips for those who have not used a command line in ages**
+
+Sometimes it takes some time for a command prompt to come up with a result. If it ever gets stuck you can use "ctrl+c" to get back to the command line. 
+
+You can use the up arrow to find previous entered commands. 
 
 ## 1. Sign into Google Cloud
 
@@ -12,11 +21,11 @@ Open the Google Cloud Shell
 
 List all the projects on Google Cloud to make sure everything is working and you're in the right place. 
 ```
-$ gcloud projects list
+gcloud projects list
 ```
-If you used Google Cloud before you may have more than one project. Make sure you change to the correct project:
+If you used Google Cloud before you may have more than one project. Make sure you change to your preferred project. If you never used Google Cloud before you can skip this command` line.
 ```
-$ gcloud config set project [PROJECT_ID]
+gcloud config set project [PROJECT_ID]
 ```
 ## 2. Clone Github
 
@@ -39,7 +48,7 @@ cd hands-on-with-kubernetes-gke
 Run the command to create a 3-node cluster on Google cloud.
 
 ```
-$ gcloud container clusters create "k8sintelgoogle" \
+gcloud container clusters create "k8sintelgoogle" \
   --zone "us-east1-c" \
   --machine-type "n1-standard-1" \
   --image-type "GCI" --disk-size "100" \
@@ -52,38 +61,38 @@ $ gcloud container clusters create "k8sintelgoogle" \
 Install kubectl
 
 ```
-$ gcloud components install kubectl
+gcloud components install kubectl
 ```
 
 Get credentials
 
 ```
-$ gcloud auth application-default login
+gcloud auth application-default login
 ```
 
 Configure kubectl with the training cluster context.
 
 ```
-$ gcloud container clusters get-credentials k8sintelgoogle
+gcloud container clusters get-credentials k8sintelgoogle
 ```
 
 Verify kubectl can connect to the cluster
 
 ```
-$ kubectl cluster-info
+kubectl cluster-info
 ```
 
 Since we are using the public cloud command line (essentially a VM in Google Cloud) we need to modify the Kubernetes Dashboard UI service and expose it to the internet
 
 ```
-$ kubectl get svc kubernetes-dashboard -n kube-system -o yaml | \
+kubectl get svc kubernetes-dashboard -n kube-system -o yaml | \
 sed "s/ClusterIP/LoadBalancer/" | \
 kubectl apply -f - -n kube-system
 ```
 Get the IP of the Dashboard
 
 ```
-$ kubectl get svc kubernetes-dashboard -n kube-system -w
+kubectl get svc kubernetes-dashboard -n kube-system -w
 ```
 Grab the IP address from the highlighted below and paste it into your prefered browser
 
@@ -94,7 +103,7 @@ Grab the IP address from the highlighted below and paste it into your prefered b
 In the command line, deploy "hello world" application to get something up and running on your new cluster
 
 ```
-$ kubectl run hello-world \
+kubectl run hello-world \
 --replicas=5 --labels="run=load-balancer-example" \
 --image=gcr.io/google-samples/node-hello:1.0  \
 --port=8080
