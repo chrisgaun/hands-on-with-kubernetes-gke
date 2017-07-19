@@ -5,9 +5,11 @@ $
 ```
 **Tips for those who have not used a command line in ages**
 
-It may take some time for a command prompt to come up with a result. If it ever gets stuck you can use "ctrl+c" to get back to the command line. 
+It may take few minutes for a command prompt to respond. However, if it ever gets stuck you can use "ctrl+c" to get back to the command line. 
 
 You can use the up arrow to find previous entered commands. 
+
+To copy from the command line, simply highlight (no ctrl+c !) 
 
 ## 1. Sign into Google Cloud
 
@@ -99,7 +101,7 @@ Get the IP of the Dashboard
 ```
 kubectl get svc kubernetes-dashboard -n kube-system -w
 ```
-Grab the IP address from the highlighted below and paste it into your prefered browser
+Grab the external IP address from the highlighted below and paste it into your prefered browser (your IP will be different from one below) 
 
 ![IP Address](http://i.imgur.com/i1hlPV2.png)
 
