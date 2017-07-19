@@ -115,6 +115,9 @@ kubectl run hello-world \
 --image=gcr.io/google-samples/node-hello:1.0  \
 --port=8080
 ```
+Navigate to the "pods" section in the Kubernetes Dashboard you just opened up in the browser window. You should see "pods" being created. 
+
+![Imgur](http://i.imgur.com/j8oVACv.png)
 
 ## 6. Tour of Dashboard (the official UI of Kubernetes)
 
