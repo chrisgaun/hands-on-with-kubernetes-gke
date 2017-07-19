@@ -122,3 +122,5 @@ Navigate to the "pods" section in the Kubernetes Dashboard you just opened up in
 ## 6. Tour of Dashboard (the official UI of Kubernetes)
 
 Instructor will give a tour of the Kubernetes Dashboard and cover the constructs of Kubernetes. 
+
+They will then cover the demo apps found here https://github.com/chrisgaun/hands-on-with-kubernetes-gke/blob/master/docs/demos 
