@@ -45,7 +45,7 @@ cd hands-on-with-kubernetes-gke
 
 ## 3. Provision Cluster
 
-Run the command to create a 3-node cluster on Google cloud.
+Run the command to create a 3-node cluster on Google cloud. This may take a minute to respond and will need to run for several minutes. 
 
 ```
 gcloud container clusters create "k8sintelgoogle" \
@@ -70,7 +70,7 @@ Get credentials
 gcloud auth application-default login
 ```
 
-Configure kubectl with the training cluster context.
+Configure kubectl with the training cluster context. The 
 
 ```
 gcloud container clusters get-credentials k8sintelgoogle
