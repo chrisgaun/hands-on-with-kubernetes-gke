@@ -45,7 +45,7 @@ cd hands-on-with-kubernetes-gke
 
 ## 3. Provision Cluster
 
-Run the command to create a 3-node cluster on Google cloud. This may take a minute to respond and will need to run for several minutes. 
+Run the command to create a 3-node cluster on Google cloud. This may take a minute to respond and will need to run for several minutes. It is a good time for a bathroom break.  
 
 ```
 gcloud container clusters create "k8sintelgoogle" \
@@ -55,6 +55,12 @@ gcloud container clusters create "k8sintelgoogle" \
   --scopes cloud-platform \
   --num-nodes "3"
 ``` 
+When the command is finishing executing, you will see output like this
+![Imgur](http://i.imgur.com/zAMyyez.png)
+
+You should also navigate to the Google Container Engine section of the Google Cloud Portal https://console.cloud.google.com/kubernetes/list You should see the your newly created Kubernetes cluster.
+
+Now navigate to the Google compute section and you will see the virtual machines that are hosting the Kubernetes fabric https://console.cloud.google.com/compute/instances  
 
 ## 4. Connect with Cluster
 
