@@ -5,7 +5,7 @@ gcloud compute regions list
 ```
 **Tips for those who have not used a command line in ages**
 
-Sometimes it takes some time for a command prompt to come up with a result. If it ever gets stuck you can use "ctrl+c" to get back to the command line. 
+It may take some time for a command prompt to come up with a result. If it ever gets stuck you can use "ctrl+c" to get back to the command line. 
 
 You can use the up arrow to find previous entered commands. 
 
