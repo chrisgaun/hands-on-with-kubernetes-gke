@@ -35,7 +35,7 @@ Clone this Github repo to the Cloud Shell so that you have all demo applications
 git clone https://github.com/chrisgaun/hands-on-with-kubernetes-gke 
 ```
 
-Now type "ls" into the command line. You should see the repo. 
+Now type "ls" into the command line. You should see the "hands-on-with-kubernetes-gke" repo. 
 
 Change the directory to the cloned repo
 
