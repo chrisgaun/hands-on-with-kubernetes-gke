@@ -50,6 +50,8 @@ You will still have roughly $300 in Google Cloud credits you can use to test out
 
 Kubernetes vs. Mesos Marathon vs. Docker Swarm vs. Cloud Foundry SWOT analysis found [here](https://apprenda.com/white-papers/container-orchestration-comparison-guide/)
 
+Google Cloud Podcast with John Wilkes, one of the engineers from Google who originally developed borg [here](https://www.gcppodcast.com/post/episode-46-borg-and-k8s-with-john-wilkes/)
+
 Learn Why CTO's and Developers are Choosing Kubernetes [here](https://apprenda.com/why-kubernetes/)
 
 Join the Kubernetes community [here](https://github.com/chrisgaun/GKE-hands-on-training/blob/master/community.md)
