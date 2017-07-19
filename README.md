@@ -29,6 +29,12 @@ The presenter will go through a list of demos during the workshop.
 
 Find the demos [here](docs/demos)
 
+## Fill Out Survey For Kubernetes Water Bottle! 
+
+We really enjoy your feedback! 
+
+Find the survey [here](https://docs.google.com/forms/d/e/1FAIpQLSfesQXqJOdKcZt3SsT2_itM4DmzRW9w5KEyKbBybA8puSCIjQ/viewform)
+
 ## Destroying Cluster and Load Balancers After Training
 
 Congrats on finishing the hands on introduction to Kubernetes!
