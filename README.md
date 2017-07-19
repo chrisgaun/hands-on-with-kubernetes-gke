@@ -29,21 +29,23 @@ The presenter will go through a list of demos during the workshop.
 
 Find the demos [here](docs/demos)
 
-## Destroying Cluster After Training
+## Destroying Cluster and Load Balancers After Training
 
 Congrats on finishing the hands on introduction to Kubernetes!
 
 To remove the Kubernetes cluster and underlying infrastructure execute the following from your local machine.
 
 ```
-$ gcloud container clusters delete [NAME OF CLUSTER] --zone "[ZONE]"
+gcloud container clusters delete [NAME OF CLUSTER] --zone "[ZONE]"
 ```
 If you used the standard command in this workshop to start the cluster than copy and paste the following:
 
 ```
-$ gcloud container clusters delete k8sintelgoogle \
+gcloud container clusters delete k8sintelgoogle \
 --zone "us-east1-c"
 ```
+Navigate to the network section in the Google Cloud Portal and delete the load balancers that were created https://console.cloud.google.com/networking/loadbalancing/loadBalancers/ 
+
 You will still have roughly $300 in Google Cloud credits you can use to test out Kubernetes more.
 
 ## Reference
