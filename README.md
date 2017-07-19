@@ -35,6 +35,8 @@ We really enjoy your feedback!
 
 Find the survey [here](https://docs.google.com/forms/d/e/1FAIpQLSfesQXqJOdKcZt3SsT2_itM4DmzRW9w5KEyKbBybA8puSCIjQ/viewform)
 
+![waterbottle](http://i.imgur.com/TvNt5QK.jpg)
+
 ## Destroying Cluster and Load Balancers After Training
 
 Congrats on finishing the hands on introduction to Kubernetes!
