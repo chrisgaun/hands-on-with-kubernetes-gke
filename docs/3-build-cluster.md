@@ -23,6 +23,10 @@ List all the projects on Google Cloud to make sure everything is working and you
 ```
 gcloud projects list
 ```
+Set default zone in Google Cloud for the workshop
+```
+gcloud config set compute/zone us-east1-c
+```
 If you used Google Cloud before you may have more than one project. Make sure you change to your preferred project. If you never used Google Cloud before you can skip this command` line.
 ```
 gcloud config set project [PROJECT_ID]
@@ -64,22 +68,17 @@ Now navigate to the Google compute section and you will see the virtual machines
 
 ## 4. Connect with Cluster
 
-Install kubectl
+Make sure kubectl is up to date
 
 ```
 gcloud components install kubectl
 ```
 
-Get credentials
+Configure kubectl with the training cluster context. 
 
 ```
-gcloud auth application-default login
-```
-
-Configure kubectl with the training cluster context. The 
-
-```
-gcloud container clusters get-credentials k8sintelgoogle
+gcloud container clusters get-credentials k8sintelgoogle \
+--zone us-east1-c 
 ```
 
 Verify kubectl can connect to the cluster
