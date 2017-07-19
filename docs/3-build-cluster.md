@@ -1,7 +1,7 @@
 # Build the Kubernetes Cluster
-In the following section, there are commands highlighted in grey. You will copy and paste the commands into the Google CLoud Shell command prompt - $
+In the following section, there are commands highlighted in grey. You will copy and paste the commands into the Google CLoud Shell command prompt - $. For example, the following list regions with compute resources
 ```
-gcloud
+gcloud compute regions list
 ```
 **Tips for those who have not used a command line in ages**
 
