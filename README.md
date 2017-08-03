@@ -29,13 +29,13 @@ The presenter will go through a list of demos during the workshop.
 
 Find the demos [here](docs/demos)
 
-## Fill Out Survey For Kubernetes Water Bottle! 
+## Fill Out Survey For Gift!
 
 We really enjoy your feedback! 
 
-Find the survey [here](https://docs.google.com/forms/d/e/1FAIpQLSfesQXqJOdKcZt3SsT2_itM4DmzRW9w5KEyKbBybA8puSCIjQ/viewform)
+Find the survey [here](https://goo.gl/forms/xleficwP525Y7nXY2)
 
-![waterbottle](http://i.imgur.com/TvNt5QK.jpg)
+![Imgur](http://i.imgur.com/Y96hh41.jpg)
 
 ## Destroying Cluster and Load Balancers After Training
 
