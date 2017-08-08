@@ -44,15 +44,15 @@ $ kubectl expose deployment kdemo-dep --type=LoadBalancer --name=k8s-workshop-si
 Find the port and external IP
 
 ```
-$ kubectl get services k8s-workshop-site-dev
+$ kubectl get services probes-demo
 ```
 
 You should now be seeing:
 
 ```
 root@bootstrap-node:~/hands-on-with-kubernetes-workshop# kubectl get services
-NAME                CLUSTER-IP       EXTERNAL-IP            PORT(S)        AGE
-k8s-workshop-site   172.17.149.128   104.196.252.72         80:32233/TCP   13s
+NAME          CLUSTER-IP      EXTERNAL-IP    PORT(S)        AGE
+probes-demo   10.63.255.228   35.196.232.7   80:31869/TCP   2m
 ```
 
 Navigate to the external-ip address with the port (104.196.252.72:80 in this example).
@@ -90,7 +90,7 @@ Refresh the site in the browser. You should see version 1.1.
 Delete the Service
 
 ```
-kubectl delete services k8s-workshop-site-dev
+kubectl delete services probes-demo
 ```
 
 Finally delete the deployment
