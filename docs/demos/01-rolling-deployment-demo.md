@@ -52,10 +52,10 @@ You should now be seeing:
 ```
 root@bootstrap-node:~/hands-on-with-kubernetes-workshop# kubectl get services
 NAME                CLUSTER-IP       EXTERNAL-IP            PORT(S)        AGE
-k8s-workshop-site   172.17.149.128   104.196.252.72         80:32233/TCP   13s
+k8s-workshop-site   172.17.149.128   104.196.252.72         8080:32233/TCP   13s
 ```
 
-Navigate to the external-ip address with the port (104.196.252.72:80 in this example).
+Navigate to the external-ip address with the port (104.196.252.72:8080 in this example).
 
 ## 5. Deploy version 1.1 of the website
 
