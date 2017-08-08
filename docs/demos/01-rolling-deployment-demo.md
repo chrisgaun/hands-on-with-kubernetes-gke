@@ -23,12 +23,12 @@ $ kubectl apply -f examples/rolling-deployment/deployment-v1.0.yaml
 ## 3. Display the pods
 
 ```
-$ kubectl get deployments k8s-workshop-site
+$ kubectl get deployments kdemo-dep
 ```
 Decribe the deployment
 
 ```
-$ kubectl describe deployments k8s-workshop-site
+$ kubectl describe deployments kdemo-dep
 ```
 See all the pods running on the cluster
 
