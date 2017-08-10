@@ -103,6 +103,10 @@ kubectl get svc kubernetes-dashboard -n kube-system -w
 ```
 Grab the external IP address from the highlighted below and paste it into your prefered browser (your IP will be different from one below) 
 
+Stop the command from running
+```
+ctrl + c
+```
 ![IP Address](http://i.imgur.com/i1hlPV2.png)
 
 ## 5. Run "Hello World"
