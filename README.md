@@ -75,5 +75,5 @@ The Google SDK Container commands are found [here](https://cloud.google.com/sdk/
 
 ![Apprenda](https://upload.wikimedia.org/wikipedia/commons/c/cc/Apprenda_logo.png)
 
-![Google Cloud Platform](https://cloud.google.com/_static/1c93cfc82f/images/cloud/gcp-logo.svg)
+<!--- ![Google Cloud Platform](https://cloud.google.com/_static/1c93cfc82f/images/cloud/gcp-logo.svg) --->
 
